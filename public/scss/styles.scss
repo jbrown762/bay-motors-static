@@ -7,9 +7,28 @@ $light-gray: #f3f3f3;
 $text-color: #DEF3FF;
 $nav-bottom-border: 5px;
 
-*{
-  //  border: 1px solid red
+
+//mixins for breakpoints, min and max screen widths
+
+@mixin media-breakpoint-up($width) {
+  @media (min-width: #{$width}){
+    @content;
+  }
 }
+
+
+@mixin media-breakpoint-down($width) {
+    @media (max-width: #{$width - 1}) {
+        @content;
+      }
+  }
+
+
+
+
+// *{
+//    border: 1px solid red
+// }
 
 html, body, app-root {
     height: 100%;
@@ -87,15 +106,6 @@ html, body, app-root {
         color: $text-color;
     }
 }
-
-// .list-financing-overview{
-//     list-style: none;
-
-//     li:before{
-//         content: "•";
-//         font-weight: bold
-//     }
-// }
 
 .fa {
     padding-right: 10px
@@ -246,5 +256,17 @@ html, body, app-root {
 .contact-link{
     a{
         color: $text-color;
+    }
+}
+
+.adjacent-column-lg{
+    @include media-breakpoint-down(992px){
+        margin-top: 3rem;
+    }
+}
+
+.adjacent-column-md{
+    @include media-breakpoint-down(768px){
+        margin-top: 3rem;
     }
 }

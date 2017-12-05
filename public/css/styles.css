@@ -157,4 +157,12 @@ html, body, app-root {
 .contact-link a {
   color: #DEF3FF; }
 
+@media (max-width: 991px) {
+  .adjacent-column-lg {
+    margin-top: 3rem; } }
+
+@media (max-width: 767px) {
+  .adjacent-column-md {
+    margin-top: 3rem; } }
+
 /*# sourceMappingURL=styles.css.map */
