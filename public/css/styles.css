@@ -1,0 +1,160 @@
+html, body, app-root {
+  height: 100%;
+  color: #DEF3FF; }
+
+.bg-cover-image {
+  background-position: center;
+  background-image: url("../assets/images/backgrounds/car.jpg");
+  background-size: cover;
+  height: 600px; }
+
+.section-style, .background-dark, .background-light, .background-gray {
+  padding: 7rem 0; }
+
+.background-dark {
+  background-color: #1c2931;
+  color: #f3f3f3; }
+
+.background-light {
+  background-color: #f3f3f3;
+  color: #3f3f3f; }
+
+.background-gray {
+  background-color: #ececec;
+  color: #3f3f3f; }
+
+.heading {
+  text-transform: capitalize;
+  padding-bottom: 20px; }
+
+.sub-header {
+  font-weight: bold; }
+
+.horizontal-divider {
+  border-top: 5px solid;
+  width: 5%;
+  padding: 20px 0px; }
+
+.horizontal-divider-thin {
+  border-top: 1px solid;
+  width: 100%; }
+
+.app-style {
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f3f3f3;
+  font-size: 16px; }
+
+.info-bar-style {
+  background-color: #1c2931;
+  min-height: 55px;
+  padding: 15px; }
+
+.info {
+  display: inline-block; }
+  .info a {
+    color: #DEF3FF; }
+
+.fa {
+  padding-right: 10px; }
+
+.icon {
+  color: #DEF3FF;
+  text-align: center; }
+
+.divider::after {
+  content: "|";
+  padding: 15px; }
+
+.social-media-icon {
+  color: #DEF3FF; }
+  .social-media-icon:hover {
+    color: #d3d3d3;
+    text-decoration: none; }
+
+.navbar {
+  padding: 20px; }
+  .navbar .navbar-nav {
+    margin-bottom: -5px; }
+  .navbar .nav-item {
+    margin-right: 15px; }
+    .navbar .nav-item .active, .navbar .nav-item a:hover {
+      border-bottom: 5px solid #0099CC; }
+  .navbar .nav-link, .navbar .navbar-brand {
+    font-weight: bold; }
+  .navbar .navbar-brand {
+    text-align: center; }
+
+.button-style, .btn.btn-light, .btn.btn-outline-light, .btn.btn-dark, .btn.btn-outline-dark {
+  border-radius: 0px;
+  font-size: 1.1rem;
+  padding: .6rem 2rem;
+  cursor: pointer; }
+
+.btn.btn-light {
+  color: #DEF3FF;
+  border-color: #DEF3FF; }
+  .btn.btn-light:hover {
+    color: #1c2931;
+    background-color: #DEF3FF;
+    border-color: #DEF3FF; }
+  .btn.btn-light:not([disabled]):not(.disabled):active {
+    color: #1c2931;
+    background-color: #DEF3FF;
+    border-color: #DEF3FF;
+    box-shadow: 0; }
+
+.btn.btn-outline-light {
+  color: #DEF3FF;
+  border-color: #DEF3FF; }
+  .btn.btn-outline-light:hover {
+    color: #1c2931;
+    background-color: #DEF3FF;
+    border-color: #DEF3FF; }
+  .btn.btn-outline-light:not([disabled]):not(.disabled):active {
+    color: #1c2931;
+    background-color: #DEF3FF;
+    border-color: #DEF3FF;
+    box-shadow: 0; }
+
+.btn.btn-dark {
+  color: #DEF3FF;
+  border-color: #0099CC;
+  background-color: #0099CC; }
+  .btn.btn-dark:hover {
+    background-color: #248fb3;
+    border-color: #DEF3FF; }
+  .btn.btn-dark:not([disabled]):not(.disabled):active {
+    color: #DEF3FF;
+    background-color: #248fb3;
+    border-color: #DEF3FF;
+    box-shadow: 0; }
+
+.btn.btn-outline-dark {
+  color: #0099CC;
+  border-color: #0099CC; }
+  .btn.btn-outline-dark:hover {
+    color: #DEF3FF;
+    background-color: #0099CC;
+    border-color: #DEF3FF; }
+  .btn.btn-outline-dark:not([disabled]):not(.disabled):active {
+    color: #DEF3FF;
+    background-color: #248fb3;
+    border-color: #DEF3FF;
+    box-shadow: 0; }
+
+.input-field {
+  border: 1px solid #1c2931;
+  border-radius: 0px;
+  padding: 1rem; }
+
+.fa-spacing {
+  padding-left: 28px; }
+
+.contact-line {
+  padding-top: 1rem; }
+
+.contact-link a {
+  color: #DEF3FF; }
+
+/*# sourceMappingURL=styles.css.map */

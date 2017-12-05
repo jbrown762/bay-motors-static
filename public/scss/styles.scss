@@ -1,0 +1,250 @@
+//fonts
+
+$primary-color: #0099CC;
+$primary-dark-color: #248fb3;
+$dark-gray: #1c2931;
+$light-gray: #f3f3f3;
+$text-color: #DEF3FF;
+$nav-bottom-border: 5px;
+
+*{
+  //  border: 1px solid red
+}
+
+html, body, app-root {
+    height: 100%;
+    color: $text-color
+}
+
+.app-main-content{}
+
+.bg-cover-image{
+    background-position: center;
+    background-image: url("../assets/images/backgrounds/car.jpg");
+    background-size: cover;
+    height: 600px
+}
+
+.section-style {
+    padding: 7rem 0;
+}
+
+.background-dark{
+    @extend .section-style;    
+    background-color: $dark-gray;
+    color: $light-gray;
+}
+
+.background-light{
+    @extend .section-style;    
+    background-color: $light-gray;
+    color: #3f3f3f;
+}
+
+.background-gray{
+    @extend .section-style;    
+    background-color: #ececec;
+    color: #3f3f3f;
+}
+
+.heading{
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+.sub-header{
+    font-weight: bold;
+}
+
+.horizontal-divider{
+    border-top: 5px solid ;
+    width: 5%;
+    padding: 20px 0px;
+}
+
+.horizontal-divider-thin{
+    border-top: 1px solid ;
+    width: 100%;
+}
+
+.app-style{
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: $light-gray;
+    font-size: 16px;
+}
+
+.info-bar-style{
+    background-color: #1c2931;
+    min-height: 55px;
+    padding: 15px
+}
+
+.info{
+    display: inline-block;
+
+    a{
+        color: $text-color;
+    }
+}
+
+// .list-financing-overview{
+//     list-style: none;
+
+//     li:before{
+//         content: "•";
+//         font-weight: bold
+//     }
+// }
+
+.fa {
+    padding-right: 10px
+}
+
+.icon{
+    color: $text-color;
+    text-align: center
+}
+
+.divider::after{
+    content: "|";
+    padding: 15px
+}
+
+.social-media-icon{
+    color: $text-color;
+
+    &:hover{
+        color: #d3d3d3;
+        text-decoration: none;
+      }
+}
+
+.navbar{
+    padding: 20px;
+
+    .navbar-nav{
+        margin-bottom: -$nav-bottom-border;
+    }
+    
+    .nav-item {
+        margin-right: 15px;
+
+        .active, a:hover {
+             border-bottom: $nav-bottom-border solid $primary-color;    
+        }
+        
+    }
+
+    .nav-link, .navbar-brand{
+        font-weight: bold
+    }
+
+    .navbar-brand{
+        text-align: center
+    }
+}
+
+.button-style{
+    border-radius: 0px;
+    font-size: 1.1rem;
+    padding: .6rem 2rem;
+    cursor: pointer;
+}
+
+.btn.btn-light{
+    @extend .button-style;
+    color: $text-color;
+    border-color: $text-color;
+
+    &:hover {
+        color: $dark-gray;
+        background-color: $text-color;
+        border-color: $text-color;
+    }
+
+    &:not([disabled]):not(.disabled):active{
+        color: $dark-gray;
+        background-color: $text-color;
+        border-color: $text-color;
+        box-shadow: 0;
+    }
+}
+
+.btn.btn-outline-light{
+    @extend .button-style;
+    color: $text-color;
+    border-color:$text-color;
+
+    &:hover{
+        color: $dark-gray;        
+        background-color: $text-color;
+        border-color: $text-color;
+    }
+    
+    &:not([disabled]):not(.disabled):active{
+        color: $dark-gray;        
+        background-color: $text-color;
+        border-color: $text-color;
+        box-shadow: 0;
+    }
+}
+
+
+.btn.btn-dark{
+    @extend .button-style;
+    color: $text-color;
+    border-color: $primary-color;
+    background-color: $primary-color;
+    
+    &:hover{
+        background-color: $primary-dark-color;
+        border-color: $text-color;
+    }
+    
+    &:not([disabled]):not(.disabled):active{
+        color: $text-color;
+        background-color: $primary-dark-color;
+        border-color: $text-color;
+        box-shadow: 0;
+    }
+}
+
+.btn.btn-outline-dark{
+    @extend .button-style;
+    color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover{
+        color: $text-color;        
+        background-color: $primary-color;
+        border-color: $text-color;
+    }
+    
+    &:not([disabled]):not(.disabled):active{
+        color: $text-color;
+        background-color: $primary-dark-color;
+        border-color: $text-color;
+        box-shadow: 0;
+    }
+}
+
+.input-field {
+    border: 1px solid $dark-gray;
+    border-radius: 0px;
+    padding: 1rem
+}
+
+.fa-spacing{
+    padding-left: 28px
+}
+
+.contact-line{
+    padding-top: 1rem
+}
+
+.contact-link{
+    a{
+        color: $text-color;
+    }
+}
