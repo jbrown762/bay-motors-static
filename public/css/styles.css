@@ -1,12 +1,32 @@
-html, body, app-root {
+html, body {
   height: 100%;
-  color: #DEF3FF; }
+  color: #DEF3FF;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f3f3f3; }
 
 .bg-cover-image {
   background-position: center;
   background-image: url("../assets/images/backgrounds/car.jpg");
   background-size: cover;
   height: 600px; }
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%; }
+  @media (max-width: 991px) {
+    .overlay {
+      padding: 2rem;
+      text-align: center;
+      padding-top: 4rem; } }
+  @media (min-width: 992px) {
+    .overlay {
+      padding: 8rem; } }
+
+.overlay-text {
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .section-style, .background-dark, .background-light, .background-gray {
   padding: 7rem 0; }
@@ -31,19 +51,13 @@ html, body, app-root {
   font-weight: bold; }
 
 .horizontal-divider {
-  border-top: 5px solid;
-  width: 5%;
+  border-top: 3px solid;
+  width: 55px;
   padding: 20px 0px; }
 
 .horizontal-divider-thin {
   border-top: 1px solid;
   width: 100%; }
-
-.app-style {
-  height: 100%;
-  font-family: 'Quicksand', sans-serif;
-  background-color: #f3f3f3;
-  font-size: 16px; }
 
 .info-bar-style {
   background-color: #1c2931;
@@ -62,6 +76,9 @@ html, body, app-root {
   color: #DEF3FF;
   text-align: center; }
 
+.cursor-pointer {
+  cursor: pointer; }
+
 .divider::after {
   content: "|";
   padding: 15px; }
@@ -75,11 +92,11 @@ html, body, app-root {
 .navbar {
   padding: 20px; }
   .navbar .navbar-nav {
-    margin-bottom: -5px; }
+    margin-bottom: -3px; }
   .navbar .nav-item {
     margin-right: 15px; }
     .navbar .nav-item .active, .navbar .nav-item a:hover {
-      border-bottom: 5px solid #0099CC; }
+      border-bottom: 3px solid #0099CC; }
   .navbar .nav-link, .navbar .navbar-brand {
     font-weight: bold; }
   .navbar .navbar-brand {
@@ -106,7 +123,8 @@ html, body, app-root {
 
 .btn.btn-outline-light {
   color: #DEF3FF;
-  border-color: #DEF3FF; }
+  border-color: #DEF3FF;
+  border-width: 2px; }
   .btn.btn-outline-light:hover {
     color: #1c2931;
     background-color: #DEF3FF;
@@ -132,7 +150,8 @@ html, body, app-root {
 
 .btn.btn-outline-dark {
   color: #0099CC;
-  border-color: #0099CC; }
+  border-color: #0099CC;
+  border-width: 2px; }
   .btn.btn-outline-dark:hover {
     color: #DEF3FF;
     background-color: #0099CC;
@@ -157,6 +176,12 @@ html, body, app-root {
 .contact-link a {
   color: #DEF3FF; }
 
+input.has-error:invalid, textarea.has-error:invalid {
+  border: 2px solid red; }
+
+input:valid, textarea:valid {
+  border: 2px solid black; }
+
 @media (max-width: 991px) {
   .adjacent-column-lg {
     margin-top: 3rem; } }
@@ -164,5 +189,9 @@ html, body, app-root {
 @media (max-width: 767px) {
   .adjacent-column-md {
     margin-top: 3rem; } }
+
+#map {
+  height: 100%;
+  min-height: 350px; }
 
 /*# sourceMappingURL=styles.css.map */

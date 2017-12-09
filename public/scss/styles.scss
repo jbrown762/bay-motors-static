@@ -5,8 +5,20 @@ $primary-dark-color: #248fb3;
 $dark-gray: #1c2931;
 $light-gray: #f3f3f3;
 $text-color: #DEF3FF;
-$nav-bottom-border: 5px;
+$nav-bottom-border: 3px;
 
+$grid-breakpoints: (
+    // Extra small screen / phone
+    xs: 0,
+    // Small screen / phone
+    sm: 576px,
+    // Medium screen / tablet
+    md: 768px,
+    // Large screen / desktop
+    lg: 992px,
+    // Extra large screen / wide desktop
+    xl: 1200px
+  );
 
 //mixins for breakpoints, min and max screen widths
 
@@ -30,18 +42,41 @@ $nav-bottom-border: 5px;
 //    border: 1px solid red
 // }
 
-html, body, app-root {
+html, body {
     height: 100%;
-    color: $text-color
+    color: $text-color;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: $light-gray;
 }
-
-.app-main-content{}
 
 .bg-cover-image{
     background-position: center;
     background-image: url("../assets/images/backgrounds/car.jpg");
     background-size: cover;
     height: 600px
+}
+
+.overlay {
+    background-color: rgba(0,0,0, 0.2);    
+    width: 100%;
+    height: 100%;
+
+    @include media-breakpoint-down(map-get($grid-breakpoints, lg)){
+        padding: 2rem;    
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    @include media-breakpoint-up(map-get($grid-breakpoints, lg)){
+        padding: 8rem;
+    }
+}
+
+.overlay-text{
+    background-color: rgba(0,0,0, 0.5);
+    
 }
 
 .section-style {
@@ -76,21 +111,14 @@ html, body, app-root {
 }
 
 .horizontal-divider{
-    border-top: 5px solid ;
-    width: 5%;
+    border-top: 3px solid ;
+    width: 55px;
     padding: 20px 0px;
 }
 
 .horizontal-divider-thin{
     border-top: 1px solid ;
     width: 100%;
-}
-
-.app-style{
-    height: 100%;
-    font-family: 'Quicksand', sans-serif;
-    background-color: $light-gray;
-    font-size: 16px;
 }
 
 .info-bar-style{
@@ -114,6 +142,10 @@ html, body, app-root {
 .icon{
     color: $text-color;
     text-align: center
+}
+
+.cursor-pointer{
+    cursor: pointer;
 }
 
 .divider::after{
@@ -185,6 +217,7 @@ html, body, app-root {
     @extend .button-style;
     color: $text-color;
     border-color:$text-color;
+    border-width: 2px;
 
     &:hover{
         color: $dark-gray;        
@@ -224,7 +257,8 @@ html, body, app-root {
     @extend .button-style;
     color: $primary-color;
     border-color: $primary-color;
-
+    border-width: 2px;
+    
     &:hover{
         color: $text-color;        
         background-color: $primary-color;
@@ -259,14 +293,27 @@ html, body, app-root {
     }
 }
 
+input.has-error:invalid, textarea.has-error:invalid {
+    border: 2px solid red;
+}
+
+input:valid, textarea:valid {
+    border: 2px solid black;
+}
+
 .adjacent-column-lg{
-    @include media-breakpoint-down(992px){
+    @include media-breakpoint-down(map-get($grid-breakpoints, lg)){
         margin-top: 3rem;
     }
 }
 
 .adjacent-column-md{
-    @include media-breakpoint-down(768px){
+    @include media-breakpoint-down(map-get($grid-breakpoints, md)){
         margin-top: 3rem;
     }
+}
+
+#map {
+    height: 100%;
+    min-height: 350px;
 }

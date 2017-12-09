@@ -21,287 +21,294 @@
 
 <body>
 
-    <div class="app-style">
-        <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
-        <div id="nav"></div>
+    <div id="nav"></div>
 
-        <div id="content" class="app-main-content">
+    <div id="content" class="app-main-content">
 
-            <div class="bg-cover-image"></div>
+        <div class="bg-cover-image">
+            <div class="overlay">
+                <h1>Find you dream car</h1>
+                <h4>Start searching now</h4>
+                <button id="btnInventory" name="btnInventory" type="button" class="btn btn-outline-light mt-4">View Inventory</button>
+            </div>
+        </div>
 
-            <div class="background-light">
-                <div class="container">
-                    <h1 class="heading">Welcome to Bay Motors</h1>
+        <div class="background-light">
+            <div class="container">
+                <h1 class="heading">Welcome to Bay Motors</h1>
 
-                    <div class="horizontal-divider"></div>
+                <div class="horizontal-divider"></div>
 
-                    <div class="row">
-                        <div class="col-md-5 pb-4">
-                            <div id="welcomeSubsection1">
-                                <p>Bay Motors Inc. located in Baltimore has been servicing the area proudly for over 20 years.
-                                    Here at Bay Motors, we pride our selves on having the Top sales and credit specialist
-                                    while also providing the lowest prices with in Baltimore and the surrounding areas. No
-                                    one is ever turned away here, we always find a way to make your automotive dreams a reality.</p>
-                            </div>
+                <div class="row">
+                    <div class="col-md-5 pb-4">
+                        <div id="welcomeSubsection1">
+                            <p>Bay Motors Inc. located in Baltimore has been servicing the area proudly for over 20 years. Here
+                                at Bay Motors, we pride our selves on having the Top sales and credit specialist while also
+                                providing the lowest prices with in Baltimore and the surrounding areas. No one is ever turned
+                                away here, we always find a way to make your automotive dreams a reality.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="offset-md-1 col-md-5">
+                        The Bay Motors service department is dedicated to keeping you safe on the road. Our experienced service department will keep
+                        your vehicle running in top condition. We use the latest automotive diagnostic technology to provide
+                        you with high quality service, and quick turnaround.
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-dark mt-4">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="background-dark">
+            <div class="container">
+                <h1 class="heading">Get Started</h1>
+
+                <div class="horizontal-divider"></div>
+
+                <div class="row">
+
+                    <div class="col-md-5 col-lg-4">
+
+                        <div id="subsection1">
+                            <h3 class="">
+                                <span class="sub-header">Services</span>
+                                <i class="fa fa-wrench pull-right cursor-pointer" aria-hidden="true"></i>
+                            </h3>
+
+                            <hr class="horizontal-divider-thin">
+
+                            <div>Bay Motors offers numerous services, including body repairs and paint jobs.</div>
 
                         </div>
 
-                        <div class="offset-md-1 col-md-5">
-                            The Bay Motors service department is dedicated to keeping you safe on the road. Our experienced service department will keep
-                            your vehicle running in top condition. We use the latest automotive diagnostic technology to
-                            provide you with high quality service, and quick turnaround.
+                        <button id="btnServices" type="button" class="btn btn-outline-light mt-4">View All Services</button>
 
+                    </div>
+
+                    <div class="offset-md-1 offset-md-2 col-md-5 col-lg-4">
+
+                        <div id="subsection2">
+                            <h3 class="adjacent-column-md">
+                                <span class="sub-header">Inventory</span>
+                                <i class="fa fa-car pull-right cursor-pointer" name="btnInventory" aria-hidden="true"></i>
+                            </h3>
+
+                            <hr class="horizontal-divider-thin">
+
+                            <div>Bay Motors offers a wide selection of cars.</div>
+
+                        </div>
+
+                        <button id="btnInventory" name="btnInventory" type="button" class="btn btn-outline-light mt-4">View Inventory</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="background-gray">
+            <div class="container">
+                <h1 class="heading">Financing</h1>
+
+                <div class="horizontal-divider"></div>
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <div> Like everything else at Bay Motors, our financing process is created to be quick, and efficient.
+                            You’ll receive affordable solutions. We believe that once you experience the start to finish
+                            car buying experience at Bay Motors that we will have earned your business for the rest of your
+                            life.
+                        </div>
+                        <br>
+                        <strong>Finance your new car with us today. No one gets turned down.</strong>
+
+                    </div>
+                    <div class="offset-md-1 col-md-6 adjacent-column-md">
+                        <div>
+                            <h3 class="pb-4">We Work with You!</h3>
+                            <ul class="list-financing-overview">
+                                <li>Guaranteed Credit Approval</li>
+                                <li>Chapter 7 Programs</li>
+                                <li>First Time Buyer and Second Chance Programs</li>
+                            </ul>
                         </div>
                     </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-outline-dark mt-5">Begin Financing</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="background-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="heading">Have a question?</h1>
+                        <div class="horizontal-divider"></div>
+
+                        <form novalidate name="contactForm">
+                            <div class="form-group">
+                                <label class="col-form-label sr-only sr-only-focusable" for="nameInput">Name (required)</label>
+                                <input type="text" class="form-control input-field" id="nameInput" name="name" placeholder="Name (required)" required>
+                                <div class="invalid-feedback">
+                                    Please provide your name.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-form-label sr-only sr-only-focusable" for="emailInput">Email (required)</label>
+                                <input type="email" class="form-control input-field" id="emailInput" name="email" placeholder="Email (required)" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid email address.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-form-label sr-only sr-only-focusable" for="subjectInput">Subject (required)</label>
+                                <input type="text" class="form-control input-field" id="subjectInput" name="subject" placeholder="Subject (required)" required>
+                                <div class="invalid-feedback">
+                                    Please provide a subject.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-form-label sr-only sr-only-focusable" for="messageInput">Message (required)</label>
+                                <textarea type="text" class="form-control input-field" id="messageInput" name="message" rows="5" placeholder="Enter your message here (required)"
+                                    required></textarea>
+                                <div class="invalid-feedback">
+                                    Please provide a message.
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-dark mt-4">Send Message</button>
+
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6 adjacent-column-lg">
+                        <div id="map"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="background-dark">
+            <div class="container">
+
+                <div class="pb-4">
                     <div class="row">
                         <div class="col-md-12">
-                            <button type="button" class="btn btn-dark mt-4">Learn More</button>
+                            <h1>Bay Motors</h1>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="background-dark">
-                <div class="container">
-                    <h1 class="heading">Get Started</h1>
+                    <div class="row contact-line">
 
-                    <div class="horizontal-divider"></div>
-
-                    <div class="row">
-
-                        <div class="col-lg-4">
-
-                            <div id="subsection1">
-                                <h3 class="">
-                                    <span class="sub-header">Services</span>
-                                    <i class="fa fa-wrench pull-right" aria-hidden="true"></i>
-                                </h3>
-
-                                <hr class="horizontal-divider-thin">
-
-                                <div>Bay Motors offers numerous services, including body repairs and paint jobs.</div>
-
-                            </div>
-
-                            <button id="btnServices" type="button" class="btn btn-outline-light mt-4">View All Services</button>
-
+                        <div class="col-md-6 col-lg-5 contact-link">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <a target="_blank" rel="noopener" href="https://goo.gl/maps/NmEWUqU5R2u"> 6200 Belair Rd, Baltimore, MD 21206</a>
                         </div>
 
-                        <div class="offset-lg-2 col-lg-4">
+                        <div class="col-md-6 contact-link">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:sales@baymotorsmd.com">sales@baymotorsmd.com</a>
 
-                            <div id="subsection2">
-                                <h3 class="adjacent-column-lg">
-                                    <span class="sub-header">Inventory</span>
-                                    <i class="fa fa-car pull-right" aria-hidden="true"></i>
-                                </h3>
+                            <span class="contact-link float-right">
 
-                                <hr class="horizontal-divider-thin">
+                                <a class="social-media-icon" target="_blank" rel="noopener" href="https://www.facebook.com/Baymotorsmd">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
 
-                                <div>Bay Motors offers a wide selection of cars.</div>
-
-                            </div>
-
-                            <button id="btnInventory" type="button" class="btn btn-outline-light mt-4">View Inventory</button>
+                                <a class="social-media-icon" target="_blank" rel="noopener" href="https://twitter.com/BaymotorsMD">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </span>
 
                         </div>
 
                     </div>
+
+                    <hr class="horizontal-divider-thin">
 
                 </div>
-            </div>
 
-            <div class="background-gray">
-                <div class="container">
-                    <h1 class="heading">Financing</h1>
+                <div class="row">
 
-                    <div class="horizontal-divider"></div>
+                    <div class="col-md-6 col-lg-5">
+                        <h3>Sales</h3>
+                        <div class="row contact-line">
 
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div> Like everything else at Bay Motors, our financing process is created to be quick, and efficient.
-                                You’ll receive affordable solutions. We believe that once you experience the start to finish
-                                car buying experience at Bay Motors that we will have earned your business for the rest of
-                                your life.
+                            <div class="col-1">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
                             </div>
-                            <br>
-                            <strong>Finance your new car with us today. No one gets turned down.</strong>
 
-                        </div>
-                        <div class="offset-md-1 col-md-6">
-                            <div>
-                                <h3 class="pb-4">We Work with You!</h3>
-                                <ul class="list-financing-overview">
-                                    <li>Guaranteed Credit Approval</li>
-                                    <li>Chapter 7 Programs</li>
-                                    <li>First Time Buyer and Second Chance Programs</li>
-                                </ul>
+                            <div class="col-11">
+                                <div>Monday-Saturday: 8:00AM - 8:00PM</div>
+                                <div>Closed Sunday</div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <button type="button" class="btn btn-outline-dark mt-5">Begin Financing</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="background-light">
-                <div class="container">
-                    <h1 class="heading">Have a question?</h1>
-
-                    <div class="horizontal-divider"></div>
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <form novalidate>
-                                <div class="form-group">
-                                    <label class="col-form-label sr-only sr-only-focusable" for="nameInput">Name (required)</label>
-                                    <input type="text" class="form-control input-field" id="nameInput" placeholder="Name (required)">
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-form-label sr-only sr-only-focusable" for="emailInput">Email (required)</label>
-                                    <input type="email" class="form-control input-field" id="emailInput" placeholder="Email (required)">
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-form-label sr-only sr-only-focusable" for="subjectInput">Subject (required)</label>
-                                    <input type="text" class="form-control input-field" id="subjectInput" placeholder="Subject (required)">
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-form-label sr-only sr-only-focusable" for="messageInput">Message (required)</label>
-                                    <textarea type="text" class="form-control input-field" id="messageInput" rows="5" placeholder="Enter your message here (required)"></textarea>
-                                </div>
-
-                                <button type="button" class="btn btn-dark mt-4">Send Message</button>
-
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="background-dark">
-                <div class="container">
-
-                    <div class="pb-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1>Bay Motors</h1>
-                            </div>
-                        </div>
-
-                        <!-- <div class="col-md-6 col-lg-5">
-                                <div class="row contact-line">
-
-                                    <div class="col-1">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    </div>
-
-                                    <div class="col-11 contact-link">
-                                        <a target="_blank" rel="noopener" href="https://goo.gl/maps/NmEWUqU5R2u"> 6200 Belair Rd,
-                                            <br> Baltimore, MD 21206</a>
-                                    </div>
-                                </div>
-                            </div> -->
 
                         <div class="row contact-line">
 
-                            <div class="col-md-6 col-lg-5 contact-link">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <a target="_blank" rel="noopener" href="https://goo.gl/maps/NmEWUqU5R2u"> 6200 Belair Rd, Baltimore, MD 21206</a>
+                            <div class="col-1">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
                             </div>
 
-                            <div class="col-md-6 contact-link">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <a href="mailto:sales@baymotorsmd.com">sales@baymotorsmd.com</a>
-
-                                <span class="contact-link float-right">
-
-                                    <a class="social-media-icon" target="_blank" rel="noopener" href="https://www.facebook.com/Baymotorsmd">
-                                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                                    </a>
-
-                                    <a class="social-media-icon" target="_blank" rel="noopener" href="https://twitter.com/BaymotorsMD">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                        <hr class="horizontal-divider-thin">
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-md-6 col-lg-5">
-                            <h3>Sales</h3>
-                            <div class="row contact-line">
-
-                                <div class="col-1">
-                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                </div>
-
-                                <div class="col-11">
-                                    <div>Monday-Saturday: 8:00AM - 8:00PM</div>
-                                    <div>Closed Sunday</div>
-                                </div>
-                            </div>
-
-                            <div class="row contact-line">
-
-                                <div class="col-1">
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
-                                </div>
-
-                                <div class="col-11">
-                                    <div>Phone: 410-254-1666</div>
-                                    <div>Fax: 410-426-3461</div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-6 col-lg-5 adjacent-column-md">
-                            <h3>Services Department</h3>
-                            <div class="row contact-line">
-
-                                <div class="col-1">
-                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                </div>
-
-                                <div class="col-11">
-                                    <div>Monday-Friday: 8:00AM - 5:00PM</div>
-                                    <div>Saturday: 8:00AM - 2:00PM</div>
-                                    <div>Closed Sunday</div>
-                                </div>
-                            </div>
-
-                            <div class="row contact-line">
-
-                                <div class="col-1">
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
-                                </div>
-
-                                <div class="col-11">
-                                    <div>Phone: 410-254-8200</div>
-                                    <div>Fax: 410-426-3461</div>
-                                </div>
+                            <div class="col-11">
+                                <div>Phone: 410-254-1666</div>
+                                <div>Fax: 410-426-3461</div>
                             </div>
                         </div>
 
                     </div>
+
+                    <div class="col-md-6 col-lg-5 adjacent-column-md">
+                        <h3>Services Department</h3>
+                        <div class="row contact-line">
+
+                            <div class="col-1">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="col-11">
+                                <div>Monday-Friday: 8:00AM - 5:00PM</div>
+                                <div>Saturday: 8:00AM - 2:00PM</div>
+                                <div>Closed Sunday</div>
+                            </div>
+                        </div>
+
+                        <div class="row contact-line">
+
+                            <div class="col-1">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="col-11">
+                                <div>Phone: 410-254-8200</div>
+                                <div>Fax: 410-426-3461</div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-
         </div>
+
+
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
@@ -310,6 +317,22 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
             crossorigin="anonymous"></script>
         <script src="/js/script.js"></script>
+
+        <script>
+            function initMap() {
+                var uluru = { lat: 39.3502146, lng: -76.5363897 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZZbts9JP1_ASOVbXIsPM3c7glFDcIcOY&callback=initMap">
+        </script>
 
 </body>
 
