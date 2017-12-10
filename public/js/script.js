@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('#nav').load("../templates/nav.html");
+    $('#footer').load("../templates/footer.html");
 
     function resizeSubsections(newHeight) {
         var newSubsectionHeight = newHeight || Math.max($('#subsection1').height(), $('#subsection2').height());
@@ -89,7 +90,9 @@ $(document).ready(function () {
         if (form.checkValidity() === true) {
             console.log("clicked, send email")
         }
-        
+
         form.classList.add('was-validated');
     }, false);
+
+
 });

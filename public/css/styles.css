@@ -1,6 +1,6 @@
 html, body {
   height: 100%;
-  color: #DEF3FF;
+  color: #f3f3f3;
   font-size: 16px;
   line-height: 24px;
   font-family: 'Quicksand', sans-serif;
@@ -67,13 +67,13 @@ html, body {
 .info {
   display: inline-block; }
   .info a {
-    color: #DEF3FF; }
+    color: #f3f3f3; }
 
 .fa {
   padding-right: 10px; }
 
 .icon {
-  color: #DEF3FF;
+  color: #f3f3f3;
   text-align: center; }
 
 .cursor-pointer {
@@ -84,7 +84,7 @@ html, body {
   padding: 15px; }
 
 .social-media-icon {
-  color: #DEF3FF; }
+  color: #f3f3f3; }
   .social-media-icon:hover {
     color: #d3d3d3;
     text-decoration: none; }
@@ -109,43 +109,43 @@ html, body {
   cursor: pointer; }
 
 .btn.btn-light {
-  color: #DEF3FF;
-  border-color: #DEF3FF; }
+  color: #f3f3f3;
+  border-color: #f3f3f3; }
   .btn.btn-light:hover {
     color: #1c2931;
-    background-color: #DEF3FF;
-    border-color: #DEF3FF; }
+    background-color: #f3f3f3;
+    border-color: #f3f3f3; }
   .btn.btn-light:not([disabled]):not(.disabled):active {
     color: #1c2931;
-    background-color: #DEF3FF;
-    border-color: #DEF3FF;
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
     box-shadow: 0; }
 
 .btn.btn-outline-light {
-  color: #DEF3FF;
-  border-color: #DEF3FF;
+  color: #f3f3f3;
+  border-color: #f3f3f3;
   border-width: 2px; }
   .btn.btn-outline-light:hover {
     color: #1c2931;
-    background-color: #DEF3FF;
-    border-color: #DEF3FF; }
+    background-color: #f3f3f3;
+    border-color: #f3f3f3; }
   .btn.btn-outline-light:not([disabled]):not(.disabled):active {
     color: #1c2931;
-    background-color: #DEF3FF;
-    border-color: #DEF3FF;
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
     box-shadow: 0; }
 
 .btn.btn-dark {
-  color: #DEF3FF;
+  color: #f3f3f3;
   border-color: #0099CC;
   background-color: #0099CC; }
   .btn.btn-dark:hover {
     background-color: #248fb3;
-    border-color: #DEF3FF; }
+    border-color: #f3f3f3; }
   .btn.btn-dark:not([disabled]):not(.disabled):active {
-    color: #DEF3FF;
+    color: #f3f3f3;
     background-color: #248fb3;
-    border-color: #DEF3FF;
+    border-color: #f3f3f3;
     box-shadow: 0; }
 
 .btn.btn-outline-dark {
@@ -153,13 +153,13 @@ html, body {
   border-color: #0099CC;
   border-width: 2px; }
   .btn.btn-outline-dark:hover {
-    color: #DEF3FF;
+    color: #f3f3f3;
     background-color: #0099CC;
-    border-color: #DEF3FF; }
+    border-color: #f3f3f3; }
   .btn.btn-outline-dark:not([disabled]):not(.disabled):active {
-    color: #DEF3FF;
+    color: #f3f3f3;
     background-color: #248fb3;
-    border-color: #DEF3FF;
+    border-color: #f3f3f3;
     box-shadow: 0; }
 
 .input-field {
@@ -174,7 +174,7 @@ html, body {
   padding-top: 1rem; }
 
 .contact-link a {
-  color: #DEF3FF; }
+  color: #f3f3f3; }
 
 input.has-error:invalid, textarea.has-error:invalid {
   border: 2px solid red; }
